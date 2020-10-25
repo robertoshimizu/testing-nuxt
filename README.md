@@ -57,7 +57,11 @@ Each of these folders will contain component .vue files, and they each start out
 
 Universal Mode, which means that when the application is initially loaded, it will render the page requested on the server-side first, before sending over the initial HTML.
 
+<<<<<<< HEAD
 [<img src="https://firebasestorage.googleapis.com/v0/b/vue-mastery.appspot.com/o/flamelink%2Fmedia%2F1578373459128_1.jpg?alt=media&token=a64e156d-8805-44a8-b57b-b41a3a1c5c46 width="50%">]()
+=======
+[<img src="https://firebasestorage.googleapis.com/v0/b/vue-mastery.appspot.com/o/flamelink%2Fmedia%2F1578373459128_1.jpg?alt=media&token=a64e156d-8805-44a8-b57b-b41a3a1c5c46 width="50%"">]()
+>>>>>>> ca6fbd8ebba9ef7500deb8c2795b1d2242ed9d63
 
 The new page is shown before downloading and running any JavaScript. Once JavaScript is downloaded and run Vue is started up and the page “Hydrated,” which basically means it turns into a normal SPA (Single Page App).
 
