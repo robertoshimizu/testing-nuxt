@@ -61,6 +61,7 @@ Universal Mode, which means that when the application is initially loaded, it wi
 
 The new page is shown before downloading and running any JavaScript. Once JavaScript is downloaded and run Vue is started up and the page “Hydrated,” which basically means it turns into a normal SPA (Single Page App).
 
+You can use this option to change default nuxt mode for your project using *nuxt.config.js*
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
