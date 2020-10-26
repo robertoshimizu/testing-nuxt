@@ -1,9 +1,9 @@
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  // ssr: true,
+  ssr: true,
 
   // Change the mode either SPA or Universal (https://go.nuxtjs.dev/ssr-mode)
-  mode: 'universal',
+  // mode: 'universal', it is deprecated
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
