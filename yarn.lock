@@ -2181,10 +2181,10 @@
     easy-table "^1.1.1"
     pretty-ms "^7.0.0"
 
-"@wdio/sync@^6.5.0":
-  version "6.6.7"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.6.7.tgz#79a9e15df981baaf449dd2d30e1df8fdd03a76fd"
-  integrity sha512-B3iHZiUmEm/4rgLbykMWps04seonYagW0qyk0QjTEQlkRhSKGxn6KrUXIdxmEnRFZVyKRm0V+t50rMxK6yE7pQ==
+"@wdio/sync@^6.7.0":
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.7.0.tgz#cd9b0a2068f26136463758f8b22e96b47ca764f9"
+  integrity sha512-uVIidrYeCyEKGZfj1T7rvbDXh749Jm2g1UG0qQXby6PZaPJRsnCANUwNt8jegHZ17dKQJtJ8MuMgQa1b8NffwQ==
   dependencies:
     "@types/puppeteer" "^3.0.1"
     "@wdio/logger" "6.6.0"
