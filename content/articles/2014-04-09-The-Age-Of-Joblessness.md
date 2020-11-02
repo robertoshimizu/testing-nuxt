@@ -6,6 +6,12 @@ alt: my first blog post
 tags: forty-eight
 ---
 
+<info-box>
+  <template #info-box>
+    This is a vue component inside markdown using slots
+  </template>
+</info-box>
+
 ## This is a heading
 Haven't been feeling too well as of late. Add a final exam coming up and the
 result is a squeezed-out blog post. I do, however, intend on writing every
