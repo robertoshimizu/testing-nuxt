@@ -1,5 +1,16 @@
 <template>
   <article>
+    <nav>
+      <ul>
+        <li v-for="link of article.toc" :key="link.id">
+          <NuxtLink
+            :to="`#${link.id}`"
+            :class="{ 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }"
+            >{{ link.text }}</NuxtLink
+          >
+        </li>
+      </ul>
+    </nav>
     <!-- <pre> {{ article }} </pre> -->
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>

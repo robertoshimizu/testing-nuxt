@@ -6,14 +6,18 @@ alt: my first blog post
 tags: forty-eight
 ---
 
+## This is a heading
 Haven't been feeling too well as of late. Add a final exam coming up and the
 result is a squeezed-out blog post. I do, however, intend on writing every
 other day for the rest of my internship. I've got exciting things coming down
 the pipeline which will most likely change my blogging schedule, and perhaps
 even the outlet from which I publish my writing.
 
+<div class="bg-blue-500 text-white p-4 mb-4">
+  This is HTML inside markdown that has a class of note
+</div>
 
-
+### This is a sub heading
 Anyways, I recently wrote about [automation in our
 lives](http://giorgiodelgado.ca/automation-is-nigh.html "Automation Is Nigh")
 \- one of my favorite posts might I add. There is very little one can predict
@@ -24,6 +28,7 @@ eventually be competing for jobs with robots. Here's an excerpt from the
 job-when-you-re-boss-is-a-robot.html) that inspired me to return to this
 subject:
 
+### This is another sub heading
 > The dividing line between what's routine and what's not is shifting. When
 the 2003 study was published, truck driving and medical diagnosis fell clearly
 into the non-routine category. That's no longer the case. According to the
@@ -39,7 +44,7 @@ watson-computer-to-tackle-cancer-and-other-medical-research/) on complex
 medical treatment decisions.
 
 How do you keep up?
-
+## This is another heading
 
 
 **Be As Human As Possible:**
