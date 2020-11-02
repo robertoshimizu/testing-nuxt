@@ -4,6 +4,10 @@ description: Learning how to use @nuxt/content to create a blog
 image: first-blog-post.jpg
 alt: my first blog post
 tags: forty-eight
+author:
+  name: Benjamin
+  bio: All about Benjamin
+  image: https://images.unsplash.com/.....
 ---
 
 <info-box>

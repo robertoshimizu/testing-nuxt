@@ -20,6 +20,7 @@
     />
     <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
     <nuxt-content :document="article" />
+    <author :author="article.author" />
   </article>
 </template>
 <script>
