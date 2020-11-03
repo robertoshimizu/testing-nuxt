@@ -5,6 +5,11 @@
 </template>
 <script>
 export default {
+  computed: {
+    id() {
+      return this.$route.params.id
+    },
+  },
   head() {
     return {
       title: 'Event #' + this.id,
@@ -16,11 +21,6 @@ export default {
         },
       ],
     }
-  },
-  computed: {
-    id() {
-      return this.$route.params.id
-    },
   },
 }
 </script>
