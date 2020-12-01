@@ -1821,6 +1821,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/puppeteer@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-5.4.0.tgz#1ef860bd7a9dcf0c4633aac8c0ec21f75b431868"
+  integrity sha512-zTYDLjnHjgzokrwKt7N0rgn7oZPYo1J0m8Ghu+gXqzLCEn8RWbELa2uprE2UFJ0jU/Sk0x9jXXdOH/5QQLFHhQ==
+  dependencies:
+    "@types/node" "*"
+
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
@@ -2131,6 +2138,16 @@
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
+"@wdio/logger@6.10.4":
+  version "6.10.4"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.10.4.tgz#f821c01996d15faa6b5a399be2aea02a2661b61f"
+  integrity sha512-I+1I/5CtQigy59QJen56PHuwV0yiQdnZaOxmXIP6FzpWkeXLjcoUNaCRDuKwJx5GKrUSDqmGlMWSH53scwwzHg==
+  dependencies:
+    chalk "^4.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
 "@wdio/logger@6.6.0":
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.6.0.tgz#69375d6cf373ee8e7db7cd05085e6a325fccfdf7"
@@ -2193,13 +2210,13 @@
     easy-table "^1.1.1"
     pretty-ms "^7.0.0"
 
-"@wdio/sync@^6.5.0":
-  version "6.6.7"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.6.7.tgz#79a9e15df981baaf449dd2d30e1df8fdd03a76fd"
-  integrity sha512-B3iHZiUmEm/4rgLbykMWps04seonYagW0qyk0QjTEQlkRhSKGxn6KrUXIdxmEnRFZVyKRm0V+t50rMxK6yE7pQ==
+"@wdio/sync@^6.10.4":
+  version "6.10.4"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.10.4.tgz#fb74820ccb8d9acdce90ae40277ba0ac6bc13f92"
+  integrity sha512-gmqKgyTB3NZXd4s671I6n5y557S7dQ8MwFMwqQWER7kVDlypR2FVlXUzUfrwieP8rHclS88vqgUWXWKjgMA7gw==
   dependencies:
-    "@types/puppeteer" "^3.0.1"
-    "@wdio/logger" "6.6.0"
+    "@types/puppeteer" "^5.4.0"
+    "@wdio/logger" "6.10.4"
     fibers "^4.0.1"
 
 "@wdio/utils@6.6.3":
