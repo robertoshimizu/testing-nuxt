@@ -1648,6 +1648,11 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/fibers@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@types/fibers/-/fibers-3.1.0.tgz#3afa6d302587f52e63631cf2bc1acca6c0c3f65e"
+  integrity sha512-1o3I9xtk2PZFxwaLCC6gTaBfBZ5rvw/DSZZPK89fwuwO6LNrzSbC6rEs1xI0bQ3fCRWmO+uNJQQeD2J56oTMDg==
+
 "@types/file-loader@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@types/file-loader/-/file-loader-4.2.0.tgz#ec8e793e275b7f90cdec3ff286518c6bf7bb8fc3"
@@ -1818,6 +1823,13 @@
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-3.0.2.tgz#20085220593b560c7332b6d46aecaf81ae263540"
   integrity sha512-JRuHPSbHZBadOxxFwpyZPeRlpPTTeMbQneMdpFd8LXdyNfFSiX950CGewdm69g/ipzEAXAmMyFF1WOWJOL/nKw==
+  dependencies:
+    "@types/node" "*"
+
+"@types/puppeteer@^5.4.0":
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-5.4.2.tgz#80f3a1f54dedbbf750779716de81401549062072"
+  integrity sha512-yjbHoKjZFOGqA6bIEI2dfBE5UPqU0YGWzP+ipDVP1iGzmlhksVKTBVZfT3Aj3wnvmcJ2PQ9zcncwOwyavmafBw==
   dependencies:
     "@types/node" "*"
 
@@ -2131,6 +2143,16 @@
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
+"@wdio/logger@6.10.10":
+  version "6.10.10"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.10.10.tgz#1e07cf32a69606ddb94fa9fd4b0171cb839a5980"
+  integrity sha512-2nh0hJz9HeZE0VIEMI+oPgjr/Q37ohrR9iqsl7f7GW5ik+PnKYCT9Eab5mR1GNMG60askwbskgGC1S9ygtvrSw==
+  dependencies:
+    chalk "^4.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
 "@wdio/logger@6.6.0":
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.6.0.tgz#69375d6cf373ee8e7db7cd05085e6a325fccfdf7"
@@ -2193,13 +2215,14 @@
     easy-table "^1.1.1"
     pretty-ms "^7.0.0"
 
-"@wdio/sync@^6.5.0":
-  version "6.6.7"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.6.7.tgz#79a9e15df981baaf449dd2d30e1df8fdd03a76fd"
-  integrity sha512-B3iHZiUmEm/4rgLbykMWps04seonYagW0qyk0QjTEQlkRhSKGxn6KrUXIdxmEnRFZVyKRm0V+t50rMxK6yE7pQ==
+"@wdio/sync@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.11.0.tgz#fbf869a4888369d2fd269484808d10f971301ecb"
+  integrity sha512-ORdY40PNP1c0VKJV+dIh1tYmMXwsRHPhB66p1Y6TRm6LvIpPVX8peoB/Qx9zBsO40hAS1cFt9pdsGxu7VCHnfg==
   dependencies:
-    "@types/puppeteer" "^3.0.1"
-    "@wdio/logger" "6.6.0"
+    "@types/fibers" "^3.1.0"
+    "@types/puppeteer" "^5.4.0"
+    "@wdio/logger" "6.10.10"
     fibers "^4.0.1"
 
 "@wdio/utils@6.6.3":
