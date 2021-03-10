@@ -1770,6 +1770,11 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
   integrity sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
 
+"@types/mocha@^8.0.0":
+  version "8.2.1"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-8.2.1.tgz#f3f3ae4590c5386fc7c543aae9b78d4cf30ffee9"
+  integrity sha512-NysN+bNqj6E0Hv4CTGWSlPzMW6vTKjDpOteycDkV4IWBsO+PU48JonrPzV9ODjiI2XrjmA05KInLgF5ivZ/YGQ==
+
 "@types/node-sass@^4.11.1":
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/@types/node-sass/-/node-sass-4.11.1.tgz#bda27c5181cbf7c090c3058e119633dfb2b6504c"
@@ -2141,13 +2146,25 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^6.0.0"
 
-"@wdio/mocha-framework@^6.5.0":
-  version "6.6.7"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.6.7.tgz#a993ee82688c9dbd0e5dfbe54c78ce9c3f4f8fd0"
-  integrity sha512-br+Y7nuEyuL3go9A5DyaTcwWA9qx3Xz9yiPkaxe1hj2W+zROdERWWwGExYklkfuORUGkvECFoEpGxeAOKUkQ5g==
+"@wdio/logger@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-7.0.0.tgz#d2e7a595b3daf1285da29571cc0fd7cfcc3c1a68"
+  integrity sha512-P3inCmtc0ms1vnx3v25+U6ccD2dkiuBhaJwmIWPwSbQn8cNQ5AcQIbRWMbnzFHbJ/jSrVBnlwmUArW7L02Zpeg==
   dependencies:
-    "@wdio/logger" "6.6.0"
-    "@wdio/utils" "6.6.3"
+    chalk "^4.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
+"@wdio/mocha-framework@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.1.1.tgz#52dc41e09b043e9eaf2a53c2eca6f7bd067142eb"
+  integrity sha512-jn3G3mdqKH3e92jQ7fv8sJ3qM4eqJMzpjn7l+ok6bRjbiLpgjycgYHFbSfpp1pnwOgufgobdgQj0Nh4xeKglbw==
+  dependencies:
+    "@types/mocha" "^8.0.0"
+    "@wdio/logger" "7.0.0"
+    "@wdio/types" "7.1.1"
+    "@wdio/utils" "7.1.1"
     expect-webdriverio "^1.1.5"
     mocha "^8.0.1"
 
@@ -2202,12 +2219,27 @@
     "@wdio/logger" "6.6.0"
     fibers "^4.0.1"
 
+"@wdio/types@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.1.1.tgz#e559b453c7d56ad2a87149ff1f515f58b510dd7a"
+  integrity sha512-pgNZYZ4At8LbH/FaRL7TrmQscaSmfl5brg3qOeLWbvF9RnixtEqoaCoINUczvgmJ/mZiAHrLgooDkuQflnXSRQ==
+  dependencies:
+    got "^11.8.1"
+
 "@wdio/utils@6.6.3":
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.6.3.tgz#0000518769f008906e2655f663ee2f829f4d3139"
   integrity sha512-vZf4vyBJNlkOOwADoZmzkCtdkeNfc9DKr+TbhDnf8atHksL2AKgqoB2VdZ0F19WAw2X59OrFLIWVH0mnuGEMEA==
   dependencies:
     "@wdio/logger" "6.6.0"
+
+"@wdio/utils@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.1.1.tgz#42c6f4d4fd37de44a78a47a43c77136be270e399"
+  integrity sha512-P20MQoQBR5h6HRv/K2KO8j3q9cpviViJJxhmDud3y8/HRywl4mXBZXob2dvutj3cO4XNP/rj1RAg9IwUuw95Vw==
+  dependencies:
+    "@wdio/logger" "7.0.0"
+    "@wdio/types" "7.1.1"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -5795,6 +5827,23 @@ got@^11.0.2:
   version "11.8.0"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.0.tgz#be0920c3586b07fd94add3b5b27cb28f49e6545f"
   integrity sha512-k9noyoIIY9EejuhaBNLyZ31D5328LeqnyPNXJQb2XlJZcKakLqN5m6O/ikhq/0lw56kUYS54fVm+D1x57YC9oQ==
+  dependencies:
+    "@sindresorhus/is" "^4.0.0"
+    "@szmarczak/http-timer" "^4.0.5"
+    "@types/cacheable-request" "^6.0.1"
+    "@types/responselike" "^1.0.0"
+    cacheable-lookup "^5.0.3"
+    cacheable-request "^7.0.1"
+    decompress-response "^6.0.0"
+    http2-wrapper "^1.0.0-beta.5.2"
+    lowercase-keys "^2.0.0"
+    p-cancelable "^2.0.0"
+    responselike "^2.0.0"
+
+got@^11.8.1:
+  version "11.8.2"
+  resolved "https://registry.yarnpkg.com/got/-/got-11.8.2.tgz#7abb3959ea28c31f3576f1576c1effce23f33599"
+  integrity sha512-D0QywKgIe30ODs+fm8wMZiAcZjypcCodPNuMz5H9Mny7RJ+IjJ10BdmGW7OM7fHXP+O7r6ZwapQ/YQmMSvB0UQ==
   dependencies:
     "@sindresorhus/is" "^4.0.0"
     "@szmarczak/http-timer" "^4.0.5"
